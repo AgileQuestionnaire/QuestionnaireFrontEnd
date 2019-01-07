@@ -1,0 +1,5 @@
+# Ignoring Generated files
+dist/
+
+# Ignoring .idea files
+*.idea/
