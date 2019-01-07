@@ -1,0 +1,19 @@
+<H1>Signup!</H1>
+<div class="container">
+  <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+
+  <div>
+    First Name : <input type="text" name="firstname" [(ngModel)]="firstname">
+    Middle Name : <input type="text" name="middlename" [(ngModel)]="middlename"><br>
+    Last Name : <input type="text" name="Lastname" [(ngModel)]="lastname"><br>
+    Create Password : <input type="password" name="password" [(ngModel)]="password"><br>
+
+    <button (click)=handleSignup() class="btn btn-success">Signup</button>
+    <br>
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{errorMessage}}</div>
+    Username: <input type="text" name="Username" [(ngModel)]="firstname">
+    Password : <input type="password" name="password" [(ngModel)]="password"><br>
+    <button (click)=handleLogin() class="btn btn-success">Login</button>
+    <br>
+  </div>
+</div>

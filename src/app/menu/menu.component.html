@@ -1,0 +1,13 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div><a href="https://questionnaire.com" class="navbar-brand">Questionnaire</a> </div>
+        <ul class="navbar-nav">
+          <li><a *ngIf="hardcodedAuthenticationService.isUsedLoggedIn()" routerLink ="/welcome/Questionnaire" class="nav-link">Home</a></li>
+        </ul>
+
+      <ul class="navbar-nav navbar-collapse justify-content-end">
+        <li><a *ngIf="!hardcodedAuthenticationService.isUsedLoggedIn()" routerLink ="/signup" class="nav-link">signup/login</a></li>
+        <li><a *ngIf="hardcodedAuthenticationService.isUsedLoggedIn()" routerLink ="/logout" class="nav-link">logout</a></li>
+      </ul>
+    </nav>
+</header>
